@@ -40,6 +40,12 @@ do_part()
 		fi
 	fi
 
+	# OverlayFS mounts have no backing block device to resize.
+	if [ "$FSTYPE" = overlay ]; then
+		echo "Skipping $MOUNT_POINT (overlay filesystem)"
+		return 0
+	fi
+
 	# Setup check/mount tools and do some prepare
 	prepare_part || return
 

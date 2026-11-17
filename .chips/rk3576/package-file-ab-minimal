@@ -7,5 +7,5 @@ boot_a	boot.img
 boot_b	boot.img
 system_a	rootfs.img
 system_b	rootfs.img
-user	user.img
+overlay	overlay.img
 data	data.img

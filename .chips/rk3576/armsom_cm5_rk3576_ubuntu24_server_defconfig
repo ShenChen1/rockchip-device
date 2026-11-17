@@ -15,6 +15,7 @@ RK_UBOOT_SPL=y
 RK_UBOOT_CFG="rk3576-fit-ab"
 RK_KERNEL_PREFERRED="6.1"
 RK_KERNEL_CFG="armsom_linux_rk3576_defconfig"
+RK_KERNEL_CFG_FRAGMENTS="rk3576_anima.config"
 RK_KERNEL_DTS_NAME="rk3576-armsom-cm5-io-f050008m01"
 # RK_KERNEL_EXTBOOT is not set
 # RK_RECOVERY is not set
